@@ -68,4 +68,15 @@ fn main() {
     println!("six:{:?}",six);
     println!("none:{:?}",none);
 
+    let some_u8_value = Option::Some(3);
+    match some_u8_value {
+        Option::Some(4) => println!("666"),
+        _ => println!("888"),
+    }
+    if let Option::Some(3) = some_u8_value {
+        println!("666")
+    }else {
+        println!("888")
+    }
+
 }
