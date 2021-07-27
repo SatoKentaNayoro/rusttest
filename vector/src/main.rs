@@ -61,9 +61,12 @@ fn main() {
     {
         let mut v = vec![1,2,3,4,5];
         let mut first = &mut v[0];
-        v.push(6);
+        // v.push(6);
         println!("first = {}",first)
     }
 
-
+    let s1 = String::from("this is s1");
+    println!("{}",s1);
+    let s1 = "this is s1 again".to_string();
+    println!("{}",s1)
 }
