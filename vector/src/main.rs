@@ -68,5 +68,22 @@ fn main() {
     let s1 = String::from("this is s1");
     println!("{}",s1);
     let s1 = "this is s1 again".to_string();
-    println!("{}",s1)
+    println!("{}",s1);
+
+    for s in s1.chars() {
+        println!("{}",s)
+    };
+    for s in s1.bytes() {
+        println!("{}",s)
+    };
+
+    let s2 = String::from("你好啊");
+    for c in s2.chars() {
+        println!("{}",c)
+    };
+
+    for cb in s2.bytes() {
+        println!("{}",cb)
+    };
+
 }
