@@ -11,10 +11,13 @@ fn main() {
     // };
     // let f = File::open("hello.txt").unwrap();
     // let f = File::open("hello1.txt").expect("Failed to open hello.txt");
-    let r = read_username_from_file();
-    match r {
-        Ok(s) => println!("{}", s),
-        Err(error) => println!("{:?}", error),
+    // let r = read_username_from_file();
+    // match r {
+    //     Ok(s) => println!("{}", s),
+    //     Err(error) => println!("{:?}", error),
+    // }
+    if let Ok(s) = read_username_from_file() {
+        println!("{}",s)
     }
 }
 
