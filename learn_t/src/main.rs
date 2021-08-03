@@ -75,7 +75,7 @@ struct Point2<T, U> {
     y: U,
 }
 
-impl<T: Copy, U> Point2<T, U> {
+impl<T, U> Point2<T, U> {
     fn get_x(&self) -> &T {
         &self.x
     }
@@ -83,7 +83,7 @@ impl<T: Copy, U> Point2<T, U> {
         &self.y
     }
 
-    fn create_new<V, W>(&self, other: Point2<V, W>) -> Point2<T, W> {
+    fn create_new<V, W>(self, other: Point2<V, W>) -> Point2<T, W> {
         Point2 {
             x: self.x,
             y: other.y,
