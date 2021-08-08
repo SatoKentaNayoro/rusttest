@@ -24,7 +24,7 @@ impl Iterator for Counter {
 
 fn main() {
     let mut counter = Counter::new();
-    for i in (0..6) {
+    for i in (0..7) {
         if let Some(v) = counter.next() {
             println!("i = {},v = {}", i, v)
         } else {
